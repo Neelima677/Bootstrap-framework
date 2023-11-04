@@ -35,41 +35,41 @@
 
 	<div class="products">
         <div class="text-bg-info text-center">
-            <h2>lipstick.jpg</h2>
-            <p>Price: $50</p>
-        <img src="image1.jpg"><height="100px></height>"<width="100px"></width>
+            <h2>lipstick</h2>
+            <p>Price: $350</p>
+        <img src="lipstick.jpg"><height="100px></height>"<width="100px"></width>
         <p>a cosmetic product used to apply coloration and texture to lips...</p>
-            <button class="add-to-cart" onclick="addToCart('lipstick', 50)">Add to Cart</button>
+            <button class="add-to-cart" onclick="addToCart('lipstick', 350)">Add to Cart</button>
         </div>
 
         <div class="text-bg-warning text-center">
-            <h2>nailpolish.jpg</h2>
+            <h2>nailpolish</h2>
             <p>Price: $20</p>
-            <img src ="image2.jpg"><height="100px></height>"<width="100px"></width>
+            <img src ="nailpolish.jpg"><height="100px></height>"<width="100px"></width>
             <p>a lacquer that can be applied to human fingernail or toenails to decorate and protect the nail plates..</p>
             <button class="add-to-cart" onclick="addToCart('nailpolish', 20)">Add to Cart</button>
         </div>
     	</div>
         <div class="text-bg-danger text-center">
-            <h2>lehenga.jpg</h2>
+            <h2>lehenga</h2>
             <p>Price: $3000</p>
-            <img src="image3.jpg"><height="100px></height>"<width="100px"></width>
+            <img src="lehenga.jpg"><height="100px></height>"<width="100px"></width>
             <p>a three-piece attire consisting of the lehenga-a long flared skrit worn by indian women...</p>
             <button class="add-to-cart" onclick="addToCart('lehenga', 3000)">Add to Cart</button>
         </div>
     	</div>
         <div class="text-bg-secondary text-center">
-            <h2>shoes.jpg</h2>
+            <h2>shoes</h2>
             <p>Price: $1050</p>
-            <img src="image4.jpg"><height="100px></height>"<width="100px"></width>
+            <img src="shoes.jpg"><height="100px></height>"<width="100px"></width>
             <p>a shoe with rubber sole that is desgined for people to wear while running,playing sports,etc...</p>
             <button class="add-to-cart" onclick="addToCart('shoes', 1050)">Add to Cart</button>
         </div>
     	</div>
         <div class="text-bg-primary text-center">
-            <h2>jeans.jpg</h2>
+            <h2>jeans</h2>
             <p>Price: $500</p>
-            <img src="image5.jpg"><height="100px></height>"<width="100px"></width>
+            <img src="jeans.jpg"><height="100px></height>"<width="100px"></width>
             <p>a casual-wear pants typically made from denim fabric...</p>
             <button class="add-to-cart" onclick="addToCart('jeans', 500)">Add to Cart</button>
         </div>
