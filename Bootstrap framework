@@ -15,63 +15,63 @@
             <input type="password" id="password" placeholder="Password" required><br>
             <button type="submit">Login</button>
         </form>
-        <p>Don't have an account? <a href="#" onclick="showRegistration()">Register here</a></p>
-    </div>
-    <div  class="text-white text-center bg-success">
-        <h1><mark>Register</mark></h1>
-        <form onsubmit="return register()">
-            <input type="text" id="regUsername" placeholder="Username" required><br>
-            <input type="password" id="regPassword" placeholder="Password" required><br>
-            <input type="date" id="regdate" placeholder="date" required><br> 
-            <label for="email">Enter your email:</label>
-            <input type="email" id="email" name="email">
-            <button type="submit">Register</button>
-        </form>
-
-        <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+        <p>Don't have an account? <a href="#" onclick="showRegistration()"></a></p>
+        <div  class="text-white text-center bg-success">
+            <h1><mark>Register</mark></h1>
+            <form onsubmit="return register()">
+                <input type="text" id="regUsername" placeholder="Username" required><br>
+                <input type="password" id="regPassword" placeholder="Password" required><br>
+                <input type="date" id="regdate" placeholder="date" required><br> 
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Register</button>
+            </form>
+        
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+        </div>
     </div>
 	<div id="main-section" class="hidden">
         <h1><mark>Shopping Cart</mark></h1>
 
 	<div class="products">
         <div class="text-bg-info text-center">
-            <h2>lipstick</h2>
-            <p>Price: $350</p>
-        <img src="lipstick.jpg"><height="100px></height>"<width="100px"></width>
-        <p>a cosmetic product used to apply coloration and texture to lips...</p>
-            <button class="add-to-cart" onclick="addToCart('lipstick', 350)">Add to Cart</button>
+            <h2>LEHENGA</h2>
+            <p>Price: $5000</p>
+        <img src="images\lehenga.jpg" width="200" height="200"></img>
+        <p>a three-piece attire consisting of the lehenga-a long flared skrit worn by indian women..</p>
+            <button class="add-to-cart" onclick="addToCart('LEHENGA', 5000)">Add to Cart</button>
         </div>
 
         <div class="text-bg-warning text-center">
-            <h2>nailpolish</h2>
-            <p>Price: $20</p>
-            <img src ="nailpolish.jpg"><height="100px></height>"<width="100px"></width>
+            <h2>NAIL-POLISH</h2>
+            <p>Price: $100</p>
+            <img src ="images\nail-polish.jpg" width="200" height="200"></img>
             <p>a lacquer that can be applied to human fingernail or toenails to decorate and protect the nail plates..</p>
-            <button class="add-to-cart" onclick="addToCart('nailpolish', 20)">Add to Cart</button>
+            <button class="add-to-cart" onclick="addToCart('NAIL-POLISH', 100)">Add to Cart</button>
         </div>
     	</div>
         <div class="text-bg-danger text-center">
-            <h2>lehenga</h2>
-            <p>Price: $3000</p>
-            <img src="lehenga.jpg"><height="100px></height>"<width="100px"></width>
-            <p>a three-piece attire consisting of the lehenga-a long flared skrit worn by indian women...</p>
-            <button class="add-to-cart" onclick="addToCart('lehenga', 3000)">Add to Cart</button>
+            <h2>SHOES</h2>
+            <p>Price: $1000</p>
+            <img src="images\shoes.jpg"  width="200" height="200"></img>
+            <p>a shoe with rubber sole that is desgined for people to wear while running,playing sports,etc...</p>
+            <button class="add-to-cart" onclick="addToCart('SHOES', 1000)">Add to Cart</button>
         </div>
     	</div>
         <div class="text-bg-secondary text-center">
-            <h2>shoes</h2>
-            <p>Price: $1050</p>
-            <img src="shoes.jpg"><height="100px></height>"<width="100px"></width>
-            <p>a shoe with rubber sole that is desgined for people to wear while running,playing sports,etc...</p>
-            <button class="add-to-cart" onclick="addToCart('shoes', 1050)">Add to Cart</button>
+            <h2>LIPSTICK</h2>
+            <p>Price: $250</p>
+            <img src="images\lipstick.jpg"  width="200" height="200"></img>
+            <p>a cosmetic product used to apply coloration and texture to lips...</p>
+            <button class="add-to-cart" onclick="addToCart('LIPSTICK', 250)">Add to Cart</button>
         </div>
     	</div>
         <div class="text-bg-primary text-center">
-            <h2>jeans</h2>
-            <p>Price: $500</p>
-            <img src="jeans.jpg"><height="100px></height>"<width="100px"></width>
+            <h2>JEANS</h2>
+            <p>Price: $200</p>
+            <img src="images\jeans.jpg"  width="200" height="200"></img>
             <p>a casual-wear pants typically made from denim fabric...</p>
-            <button class="add-to-cart" onclick="addToCart('jeans', 500)">Add to Cart</button>
+            <button class="add-to-cart" onclick="addToCart('JEANS', 200)">Add to Cart</button>
         </div>
     	</div>
         <div class="cart">
@@ -82,37 +82,40 @@
         </div>
     </div>
 
-
-<script >
-    let cartItems = [];
-
-function addToCart(product, price) {
-    cartItems.push({product, price});
-    updateCart();
-}
-
-function updateCart() {
-    let cartList = document.getElementById("cart-items");
-    let totalElement = document.getElementById("total");
-    let total = 0;
-
-    cartList.innerHTML = "";
-    cartItems.forEach(item => {
-        let listItem = document.createElement("li");
-        listItem.innerText = ${item.product} - $${item.price};
-        cartList.appendChild(listItem);
-        total += item.price;
-    });
-
-    totalElement.innerText = total;
-}
-// Add product and cart logic similar to the previous example
-
-function checksout() {
-    alert('Thank you for your purchase!');
-}
-
-    </script>
+    <script >
+        let cartItems = [];
+    
+    function addToCart(product, price) {
+        cartItems.push({product, price});
+        updateCart();
+    }
+    
+    function updateCart() {
+        let cartList = document.getElementById("cart-items");
+        let totalElement = document.getElementById("total");
+        let total = 0;
+    
+        cartList.innerHTML = "";
+        cartItems.forEach(item => {
+            let listItem = document.createElement("li");
+            listItem.innerText = `${item.product} - $${item.price}`;
+            cartList.appendChild(listItem);
+            total += item.price;
+        });
+    
+        totalElement.innerText = total;
+    }
+    
+    
+    
+    
+    // Add product and cart logic similar to the previous example
+    
+    function checksout() {
+        alert('Thank you for your purchase!');
+    }
+    
+        </script>
 
 
 </body>
