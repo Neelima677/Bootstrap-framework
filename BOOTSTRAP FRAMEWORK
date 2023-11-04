@@ -38,7 +38,7 @@ html>
             <h2>LEHENGA</h2>
             <p>Price: $5000</p>
         <img src="images\lehenga.jpg" width="200" height="200"></img>
-        <p>a three-piece attire consisting of the lehenga-a long flared skrit worn by indian women..</p>
+        <p> a three-piece attire consisting of the lehenga-a long flared skrit worn by indian women..</p>
             <button class="add-to-cart" onclick="addToCart('LEHENGA', 5000)">Add to Cart</button>
         </div>
 
@@ -46,7 +46,7 @@ html>
             <h2>NAIL-POLISH</h2>
             <p>Price: $100</p>
             <img src ="images\nail-polish.jpg" width="200" height="200"></img>
-            <p>a lacquer that can be applied to human fingernail or toenails to decorate and protect the nail plates..</p>
+            <p> a lacquer that can be applied to human fingernail or toenails to decorate and protect the nail plates..</p>
             <button class="add-to-cart" onclick="addToCart('NAIL-POLISH', 100)">Add to Cart</button>
         </div>
     	</div>
@@ -54,7 +54,7 @@ html>
             <h2>SHOES</h2>
             <p>Price: $1000</p>
             <img src="images\shoes.jpg"  width="200" height="200"></img>
-            <p>a shoe with rubber sole that is desgined for people to wear while running,playing sports,etc...</p>
+            <p> a shoe with rubber sole that is desgined for people to wear while running,playing sports,etc...</p>
             <button class="add-to-cart" onclick="addToCart('SHOES', 1000)">Add to Cart</button>
         </div>
     	</div>
@@ -62,7 +62,7 @@ html>
             <h2>LIPSTICK</h2>
             <p>Price: $250</p>
             <img src="images\lipstick.jpg"  width="200" height="200"></img>
-            <p>a cosmetic product used to apply coloration and texture to lips...</p>
+            <p> a cosmetic product used to apply coloration and texture to lips...</p>
             <button class="add-to-cart" onclick="addToCart('LIPSTICK', 250)">Add to Cart</button>
         </div>
     	</div>
@@ -70,7 +70,7 @@ html>
             <h2>JEANS</h2>
             <p>Price: $200</p>
             <img src="images\jeans.jpg"  width="200" height="200"></img>
-            <p>a casual-wear pants typically made from denim fabric...</p>
+            <p> a casual-wear pants typically made from denim fabric...</p>
             <button class="add-to-cart" onclick="addToCart('JEANS', 200)">Add to Cart</button>
         </div>
     	</div>
