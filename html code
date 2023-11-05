@@ -81,15 +81,12 @@
             <button onclick="checksout()">Checkout</button>
         </div>
     </div>
-
     <script >
-        let cartItems = [];
-    
+        let cartItems = [];   
     function addToCart(product, price) {
         cartItems.push({product, price});
         updateCart();
-    }
-    
+    }  
     function updateCart() {
         let cartList = document.getElementById("cart-items");
         let totalElement = document.getElementById("total");
@@ -104,19 +101,12 @@
         });
     
         totalElement.innerText = total;
-    }
-    
-    
-    
-    
-    // Add product and cart logic similar to the previous example
-    
+    }    
+    // Add product and cart logic similar to the previous example    
     function checksout() {
         alert('Thank you for your purchase!');
     }
     
-        </script>
-
-
+</script>
 </body>
 </html>
