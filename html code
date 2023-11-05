@@ -37,15 +37,15 @@
         <div class="text-bg-info text-center">
             <h2>LEHENGA</h2>
             <p>Price: $5000</p>
-            <img src="images\lehenga.jpg" width="200" height="200"></img>
-            <p>a three-piece attire consisting of the lehenga-a long flared skrit worn by indian women.</p>
+        <img src="Downloads\lehenga.jpg" width="200" height="200"></img>
+        <p>a three-piece attire consisting of the lehenga-a long flared skrit worn by indian women.</p>
             <button class="add-to-cart" onclick="addToCart('LEHENGA', 5000)">Add to Cart</button>
         </div>
 
         <div class="text-bg-warning text-center">
             <h2>LIPSTICK</h2>
             <p>Price: $150</p>
-            <img src ="images\lipstick.jpg" width="200" height="200"></img>
+            <img src ="Downloads\lipstick.jpg" width="200" height="200"></img>
             <p>a cosmetic product used to apply coloration and texture to lips.</p>
             <button class="add-to-cart" onclick="addToCart('LIPSTICK', 150)">Add to Cart</button>
         </div>
@@ -53,7 +53,7 @@
         <div class="text-bg-danger text-center">
             <h2>SHOES</h2>
             <p>Price: $1000</p>
-            <img src="images\shoes.jpg"  width="200" height="200"></img>
+            <img src="Downloads\shoes.jpg"  width="200" height="200"></img>
             <p>a shoe with rubber sole that is desgined for people to wear while running,playing sports,etc.</p>
             <button class="add-to-cart" onclick="addToCart('SHOES', 1000)">Add to Cart</button>
         </div>
@@ -61,7 +61,7 @@
         <div class="text-bg-secondary text-center">
             <h2>JEANS</h2>
             <p>Price: $400</p>
-            <img src="images\jeans.jpg"  width="200" height="200"></img>
+            <img src="Downloads\jeans.jpg"  width="200" height="200"></img>
             <p>a casual-wear pants typically made from denim fabric.</p>
             <button class="add-to-cart" onclick="addToCart('JEANS', 400)">Add to Cart</button>
         </div>
@@ -69,7 +69,7 @@
         <div class="text-bg-primary text-center">
             <h2>NAIL-POLISH</h2>
             <p>Price: $100</p>
-            <img src="images\nail-polish.jpg"  width="200" height="200"></img>
+            <img src="Downloads\nail-polish.jpg"  width="200" height="200"></img>
             <p>a lacquer that can be applied to human fingernail or toenails to decorate and protect the nail plates.</p>
             <button class="add-to-cart" onclick="addToCart('NAIL-POLISH', 100)">Add to Cart</button>
         </div>
@@ -81,12 +81,15 @@
             <button onclick="checksout()">Checkout</button>
         </div>
     </div>
+
     <script >
-        let cartItems = [];   
+        let cartItems = [];
+    
     function addToCart(product, price) {
         cartItems.push({product, price});
         updateCart();
-    }  
+    }
+    
     function updateCart() {
         let cartList = document.getElementById("cart-items");
         let totalElement = document.getElementById("total");
@@ -101,12 +104,19 @@
         });
     
         totalElement.innerText = total;
-    }    
-    // Add product and cart logic similar to the previous example    
+    }
+    
+    
+    
+    
+    // Add product and cart logic similar to the previous example
+    
     function checksout() {
         alert('Thank you for your purchase!');
     }
     
-</script>
+        </script>
+
+
 </body>
 </html>
